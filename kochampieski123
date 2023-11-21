@@ -1,105 +1,92 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="pl">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>Świąteczna Strona</title>
+    <style>
+        /* Dodaj tutaj style CSS, animacje i responsywność */
+    </style>
 </head>
 <body>
-   <h1>na dwuje</h1>
-    <table>
-        <thead>
-            <th>Gatunek</th>
-            <th>Tytuł filmu</th>
-            <th>Rok produkcji</th>
-            <th>Ocena (1-10)</th>
-        </thead>
-        <tbody>
-            <tr>
-                <td>Dramat</td>
-                <td>Get Rich or Die Tryin’: Historia 50 Centa</td>
-                <td>2005</td>
-                <td>7</td>
-            </tr>
-            <tr>
-                <td rowspan="3">Akcja</td>
-                <td>Skok stulecia</td>
-                <td>2018</td>
-                <td>7</td>
-            </tr>
-            <tr>
-                <td>Tyler Rake 2</td>
-                <td>2023</td>
-                <td>6</td>
-            </tr>
-            <tr>
-                <td>Blue Beetle</td>
-                <td>2023</td>
-                <td>6</td>
-            </tr>
-        </tbody>    
-    </table> 
-    <h1>na truje</h1>
-    <img height="120px" src="https://wierszykidladzieci.net.pl/wp-content/uploads/2021/11/Kotek-wiersz-Juliana-Tuwima.jpg" alt="kitku"><br>
-    <iframe width="360" height="202.5" src="https://www.youtube.com/embed/JZBKm2BVUL4?autoplay=1&mute=1" allow="autoplay" allowfullscreen></iframe><br>
-    <h5>*wyciszone bo w google chrome autoplay działa tylko na wyciszeniu</h5>
-    <h1>na czwure</h1>
-    <iframe src="https://www.facebook.com/plugins/video.php?height=476&href=https%3A%2F%2Fwww.facebook.com%2F100038756511179%2Fvideos%2F1039629600784403%2F&show_text=false&width=267&t=0" width="150" height="300" style="border:none;overflow:hidden" scrolling="no" frameborder="0"></iframe>
-    <h1>na piontke może być taka ręką</h1>
-    <audio src="./nyan.mp3" controls autoplay></audio>
-    <h5>*tu się nie odpala pomimo atrybutu autoplay bo można odpalic audio dopiero po pierwszej interakcji np. kliknięcie w ekran i na to kliknięcie dodac event który odpala audio</h5>
-    <style>
-        /* usuniecie marginesu dla wszystkich elementow */
-        * {
-            margin: 0;
-        }
-        /* kolorowe tło dla całej strony */
-        body {
-            background-color: cornflowerblue;
-        }
-        /* style tabeli */
-        table {
-            left: 50%;
-            transform: translateX(-50%);
-            border: 2px solid grey;
-            border-radius: 5px;
-            background: #000120;
-            width: 50%;
-            color: grey;
-            position: relative;
-        }
-        /* style naglowkow tabeli */
-        th {
-            display: table-cell;
-            vertical-align: inherit;
-            font-weight: bold;
-            text-align: center;
-        }
-        /* style komorek */
-        td {
-            border: solid 0.5px grey;
-        }
-        /* kolor dla dramatów */
-        tbody tr:nth-child(1) {
-            background-color: #ff151575;
-        }
-        /* kolor dla filmów akcji */
-        tbody tr:nth-child(2),tr:nth-child(3),tr:nth-child(4) {
-            background-color: #15b01575;
-        }
-        /* styl nagłowka stopnia pierwszego i piatego */
-        h1, h5 {
-            text-align: center;
-        }
-        /* styl ramek video/audio/zdjec */
-        iframe, audio, img {
-            left: 50%;
-            position: relative;
-            transform: translateX(-50%);
-        }
-    </style>
+
+<header>
+    <h1>Witaj na Świątecznej Stronie!</h1>
+    <img src="santa_claus_image.jpg" alt="Święty Mikołaj">
+</header>
+
+<nav>
+    <ul>
+        <li><a href="#kolędy">Kolędy</a></li>
+        <li><a href="#galeria">Galeria</a></li>
+        <li><a href="#gry">Gry</a></li>
+        <li><a href="#przepisy">Przepisy</a></li>
+        <li><a href="#kontakt">Kontakt</a></li>
+    </ul>
+</nav>
+
+<section id="kolędy">
+    <h2>Kolędy</h2>
+    <div class="kolęda">
+        <h3>Jingle Bells</h3>
+        <p>Tekst kolędy Jingle Bells...</p>
+        <audio controls>
+            <source src="jingle_bells.mp3" type="audio/mpeg">
+            Twoja przeglądarka nie obsługuje tagu audio.
+        </audio>
+    </div>
+    <!-- Dodaj inne kolędy podobnie jak powyżej -->
+</section>
+
+<section id="galeria">
+    <h2>Galeria Świąteczna</h2>
+    <div class="zdjęcie">
+        <img src="choinka.jpg" alt="Choinka">
+        <p>Przepiękna choinka zdobiona bombkami i światełkami.</p>
+    </div>
+    <!-- Dodaj inne zdjęcia z opisami -->
+</section>
+
+<section id="gry">
+    <h2>Gry Świąteczne</h2>
+    <div class="gra">
+        <h3>Łamigłówka Mikołajowa</h3>
+        <p>Opis łamigłówki...</p>
+    </div>
+    <!-- Dodaj inne gry z opisami -->
+</section>
+
+<section id="przepisy">
+    <h2>Świąteczne Smakołyki</h2>
+    <div class="przepis">
+        <h3>Pierniki</h3>
+        <ul>
+            <li>Składnik 1</li>
+            <li>Składnik 2</li>
+            <!-- Dodaj inne składniki -->
+        </ul>
+        <ol>
+            <li>Krok 1</li>
+            <li>Krok 2</li>
+            <!-- Dodaj inne kroki -->
+        </ol>
+    </div>
+    <!-- Dodaj inne przepisy -->
+</section>
+
+<footer id="kontakt">
+    <h2>Kontakt</h2>
+    <p>Stronę przygotowali uczniowie klasy 3B:</p>
+    <p>Jan Kowalski - jan.kowalski@gmail.com</p>
+    <!-- Dodaj inne kontakty -->
+    <div>
+        <a href="https://www.facebook.com/"><img src="facebook_icon.png" alt="Facebook"></a>
+        <a href="https://twitter.com/"><img src="twitter_icon.png" alt="Twitter"></a>
+        <!-- Dodaj inne ikony mediów społecznościowych -->
+    </div>
+</footer>
+
 </body>
 </html>
-<!--
-    Autor: Julia Ożga
--->
+
+  
